@@ -1,0 +1,1565 @@
+{
+ "$schema": "./catalog.schema.md",
+ "categories": [
+  {
+   "id": "asasi",
+   "title": "حقوق عمومی و اساسی",
+   "icon": "Landmark",
+   "color": "#0f766e",
+   "order": 1,
+   "description": "قانون اساسی، انتخابات، احزاب، مطبوعات، شوراها و سازمان‌های نظارتی"
+  },
+  {
+   "id": "madani",
+   "title": "حقوق مدنی",
+   "icon": "Scale",
+   "color": "#0369a1",
+   "order": 2,
+   "description": "قانون مدنی، اموال و مالکیت، قراردادها، موجر و مستأجر، ثبت اسناد و املاک"
+  },
+  {
+   "id": "keyfari",
+   "title": "حقوق کیفری",
+   "icon": "Gavel",
+   "color": "#b91c1c",
+   "order": 3,
+   "description": "قانون مجازات اسلامی، جرایم رایانه‌ای، مواد مخدر، پول‌شویی، ارتشاء و اختلاس"
+  },
+  {
+   "id": "khanevade",
+   "title": "حقوق خانواده",
+   "icon": "Heart",
+   "color": "#be185d",
+   "order": 4,
+   "description": "حمایت خانواده، نکاح و طلاق، نفقه، حضانت و حمایت از کودکان"
+  },
+  {
+   "id": "tejarat",
+   "title": "حقوق تجارت",
+   "icon": "Building2",
+   "color": "#7c3aed",
+   "order": 5,
+   "description": "قانون تجارت، لایحه اصلاحی، شرکت‌ها، تجارت الکترونیکی، چک و بیمه"
+  },
+  {
+   "id": "kar",
+   "title": "حقوق کار و تأمین اجتماعی",
+   "icon": "HardHat",
+   "color": "#c2410c",
+   "order": 6,
+   "description": "قانون کار، قرارداد کار، مزد و ساعات کار، سازمان تأمین اجتماعی"
+  },
+  {
+   "id": "edari",
+   "title": "حقوق اداری و دیوان عدالت اداری",
+   "icon": "Building",
+   "color": "#1d4ed8",
+   "order": 7,
+   "description": "دیوان عدالت اداری، استخدام کشوری، تخلفات اداری و نظارت بر رفتار قضات"
+  },
+  {
+   "id": "aein",
+   "title": "آیین دادرسی",
+   "icon": "FileText",
+   "color": "#0e7490",
+   "order": 8,
+   "description": "آیین دادرسی مدنی و کیفری، اجرای احکام، شوراهای حل اختلاف و محکومیت‌های مالی"
+  },
+  {
+   "id": "mali",
+   "title": "حقوق مالی و مالیاتی",
+   "icon": "Coins",
+   "color": "#a16207",
+   "order": 9,
+   "description": "مالیات‌های مستقیم، ارزش افزوده، درآمدهای دولت و مقررات مالی"
+  },
+  {
+   "id": "sayer",
+   "title": "سایر موضوعات",
+   "icon": "Layers",
+   "color": "#475569",
+   "order": 10,
+   "description": "شهرداری و عوارض، محیط زیست، مالکیت فکری، معادن، اوقاف و بیمه اجباری"
+  }
+ ],
+ "hierarchy": [
+  {
+   "id": "fiqh",
+   "title": "موازین شرع (فقه شیعه)",
+   "order": 1,
+   "color": "#065f46",
+   "description": "قواعد و موازین فقهی که مبنای تفسیر و استنباط قوانین است."
+  },
+  {
+   "id": "constitution",
+   "title": "قانون اساسی",
+   "order": 2,
+   "color": "#0f766e",
+   "description": "مصوب ۱۳۵۸ و اصلاحات ۱۳۶۸ — سند بالادستی نظام حقوقی."
+  },
+  {
+   "id": "statute",
+   "title": "قوانین عادی",
+   "order": 3,
+   "color": "#0369a1",
+   "description": "مصوبات مجلس شورای اسلامی و مجمع تشخیص مصلحت نظام."
+  },
+  {
+   "id": "regulation",
+   "title": "مقررات دولتی",
+   "order": 4,
+   "color": "#7c3aed",
+   "description": "آیین‌نامه، تصویب‌نامه، بخشنامه و مصوبات هیأت وزیران."
+  },
+  {
+   "id": "council",
+   "title": "مصوبات شوراهای اسلامی محلی",
+   "order": 5,
+   "color": "#c2410c",
+   "description": "مصوبات شوراهای اسلامی شهر و روستا."
+  },
+  {
+   "id": "precedent",
+   "title": "آرای وحدت رویه",
+   "order": 6,
+   "color": "#b91c1c",
+   "description": "آرای وحدت رویه دیوان عالی کشور و دیوان عدالت اداری."
+  },
+  {
+   "id": "advisory",
+   "title": "نظریات مشورتی",
+   "order": 7,
+   "color": "#475569",
+   "description": "نظریات مشورتی اداره کل حقوقی قوه قضائیه."
+  },
+  {
+   "id": "treaty",
+   "title": "معاهدات و کنوانسیون‌های بین‌المللی",
+   "order": 8,
+   "color": "#0d9488",
+   "description": "معاهدات، میثاق‌ها و کنوانسیون‌های بین‌المللی لازم‌الاجرا در ایران."
+  }
+ ],
+ "laws": [
+  {
+   "id": "fiqh-rules",
+   "title": "موازین شرع (قواعد فقهی بنیادین)",
+   "shortTitle": "موازین شرع",
+   "category": "asasi",
+   "hierarchy": "fiqh",
+   "documentType": "قاعده فقهی",
+   "source": {
+    "kind": "curated",
+    "file": "fiqh-rules.json",
+    "name": "تدوین کارن سافت با بازبینی حقوقی",
+    "url": "https://karen-soft.ir"
+   },
+   "summary": "قواعد فقهی‌ای که مبنای تفسیر مقررات و استنباط حقوقی است؛ از جمله قاعده ید، صحت، لاضرر، اقدام، غرور، احسان و سلطنت.",
+   "keywords": [
+    "قاعده فقهی",
+    "موازین شرع",
+    "لاضرر",
+    "ید",
+    "صحت",
+    "اقدام"
+   ],
+   "checklist": [
+    "fiqh"
+   ]
+  },
+  {
+   "id": "constitution",
+   "title": "قانون اساسی جمهوری اسلامی ایران",
+   "shortTitle": "قانون اساسی",
+   "category": "asasi",
+   "hierarchy": "constitution",
+   "documentType": "قانون اساسی",
+   "approvalDate": "۱۳۵۸/۰۹/۱۲",
+   "approvalSort": 13580912,
+   "source": {
+    "kind": "constitution",
+    "file": "constitution.yaml",
+    "name": "متن قانون اساسی (سند رسمی)"
+   },
+   "summary": "قانون اساسی با مقدمه و ۱۴ فصل و ۱۷۷ اصل، مطابق اصلاحات سال ۱۳۶۸؛ شامل حقوق ملت، ساختار قوا، اقتصاد و حکومت.",
+   "keywords": [
+    "قانون اساسی",
+    "اصول",
+    "حقوق ملت",
+    "قوا",
+    "رهبری",
+    "مجلس",
+    "شورای نگهبان"
+   ],
+   "checklist": [
+    "constitution-177"
+   ],
+   "fillFrom": {
+    "kind": "corpus",
+    "file": "q0.txt",
+    "label": "متن قانون اساسی (مجموعه متون پاک‌سازی‌شده)"
+   }
+  },
+  {
+   "id": "civil-code",
+   "title": "قانون مدنی",
+   "shortTitle": "قانون مدنی",
+   "category": "madani",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۰۷/۰۲/۱۸",
+   "approvalSort": 13070218,
+   "source": {
+    "kind": "corpus",
+    "file": "q3.txt"
+   },
+   "summary": "مهم‌ترین قانون مدنی ایران با ۱۳۳۵ ماده در ۱۰ جلد و ۳ کتاب: اموال و مالکیت، اسباب تملک و ادله اثبات دعوا؛ شامل احوال شخصیه، عقود و قراردادها، نکاح و طلاق، ارث و وصیت.",
+   "keywords": [
+    "مدنی",
+    "معامله",
+    "بیع",
+    "اجاره",
+    "رهن",
+    "نکاح",
+    "طلاق",
+    "ارث",
+    "وصیت",
+    "مالکیت"
+   ],
+   "checklist": [
+    "civil-code-books-1-10"
+   ]
+  },
+  {
+   "id": "civil-procedure-code",
+   "title": "قانون آیین دادرسی دادگاه‌های عمومی و انقلاب در امور مدنی",
+   "shortTitle": "آیین دادرسی مدنی",
+   "category": "aein",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۷۹/۰۱/۲۱",
+   "approvalSort": 13790121,
+   "source": {
+    "kind": "corpus",
+    "file": "q5.txt"
+   },
+   "summary": "قواعد رسیدگی به دعاوی مدنی در دادگاه‌ها؛ صلاحیت، دادخواست، ایرادات، ادله، تجدیدنظر، فرجام‌خواهی، اعاده دادرسی، هزینه دادرسی و اعسار (۵۲۹ ماده).",
+   "keywords": [
+    "آیین دادرسی مدنی",
+    "دادخواست",
+    "صلاحیت",
+    "تجدیدنظر",
+    "فرجام",
+    "هزینه دادرسی",
+    "اعسار"
+   ],
+   "checklist": [
+    "civil-procedure"
+   ]
+  },
+  {
+   "id": "civil-judgment-enforcement-law",
+   "title": "قانون اجرای احکام مدنی",
+   "shortTitle": "اجرای احکام مدنی",
+   "category": "aein",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۵۶/۰۸/۰۱",
+   "approvalSort": 13560801,
+   "source": {
+    "kind": "corpus",
+    "file": "q6.txt"
+   },
+   "summary": "مقررات اجرای احکام و اسناد لازم‌الاجرا؛ توقیف اموال، مزایده، اعتراض به عملیات اجرایی و تحویل مال محکوم‌به.",
+   "keywords": [
+    "اجرای احکام",
+    "مزایده",
+    "توقیف اموال",
+    "سند لازم‌الاجرا"
+   ],
+   "checklist": [
+    "civil-judgment-enforcement"
+   ]
+  },
+  {
+   "id": "financial-judgment-enforcement-law",
+   "title": "قانون نحوه اجرای محکومیت‌های مالی",
+   "shortTitle": "محکومیت‌های مالی",
+   "category": "aein",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۹۴/۰۳/۲۳",
+   "approvalSort": 13940323,
+   "source": {
+    "kind": "corpus",
+    "file": "q7.txt"
+   },
+   "summary": "نحوه اجرای محکومیت‌های مالی، جلب محکوم‌علیه، اعسار، تقسیط و بازداشت بدل از حبس مدنی.",
+   "keywords": [
+    "محکومیت مالی",
+    "اعسار",
+    "تقسیط",
+    "جلب",
+    "بازداشت"
+   ],
+   "checklist": [
+    "financial-judgment"
+   ]
+  },
+  {
+   "id": "criminal-procedure-code",
+   "title": "قانون آیین دادرسی کیفری",
+   "shortTitle": "آیین دادرسی کیفری",
+   "category": "aein",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۹۲/۱۲/۰۴",
+   "approvalSort": 13921204,
+   "source": {
+    "kind": "corpus",
+    "file": "q1.txt"
+   },
+   "summary": "قواعد کشف جرم، تعقیب، تحقیقات مقدماتی، قرارهای تأمین، صلاحیت مراجع، رسیدگی و طرق اعتراض؛ مصوب ۱۳۹۲ با ۶۹۹ ماده.",
+   "keywords": [
+    "آیین دادرسی کیفری",
+    "دادسرا",
+    "بازپرس",
+    "قرار تأمین",
+    "دادگاه کیفری",
+    "تجدیدنظر"
+   ],
+   "checklist": [
+    "criminal-procedure"
+   ],
+   "fillFrom": {
+    "kind": "hub",
+    "file": "laws_criminal_procedure_code_criminal_procedure_code.json",
+    "label": "منبع پشتیبان (متون ساختاریافتهٔ قوانین)"
+   }
+  },
+  {
+   "id": "islamic-penal-code",
+   "title": "قانون مجازات اسلامی",
+   "shortTitle": "مجازات اسلامی",
+   "category": "keyfari",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۹۲/۰۲/۰۱",
+   "approvalSort": 13920201,
+   "source": {
+    "kind": "corpus",
+    "file": "q2.txt"
+   },
+   "summary": "قانون مجازات اسلامی مصوب ۱۳۹۲ (کتاب‌های کلیات، حدود، قصاص و دیات) به همراه مواد کتاب پنجم تعزیرات مصوب ۱۳۷۵؛ شامل مسئولیت کیفری، مجازات‌ها، تعلیق، تعویق و آزادی مشروط.",
+   "keywords": [
+    "مجازات",
+    "حد",
+    "قصاص",
+    "دیه",
+    "تعزیر",
+    "مسئولیت کیفری",
+    "تعلیق"
+   ],
+   "checklist": [
+    "penal-code-1392"
+   ]
+  },
+  {
+   "id": "electronic-commerce-law",
+   "title": "قانون تجارت الکترونیکی",
+   "shortTitle": "تجارت الکترونیکی",
+   "category": "tejarat",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۸۲/۱۰/۱۷",
+   "approvalSort": 13821017,
+   "source": {
+    "kind": "hub",
+    "file": "laws_electronic_commerce_law_electronic_commerce_law.json"
+   },
+   "summary": "قواعد مبادله الکترونیکی اطلاعات، داده‌پیام، امضای الکترونیکی، قراردادهای الکترونیکی، تجارت الکترونیکی و حمایت از مصرف‌کننده (۸۱ ماده).",
+   "keywords": [
+    "تجارت الکترونیکی",
+    "داده‌پیام",
+    "امضای الکترونیکی",
+    "قرارداد الکترونیکی"
+   ],
+   "checklist": [
+    "e-commerce-81"
+   ]
+  },
+  {
+   "id": "commercial-code",
+   "title": "قانون تجارت",
+   "shortTitle": "قانون تجارت",
+   "category": "tejarat",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۱۱/۰۲/۱۳",
+   "approvalSort": 13110213,
+   "source": {
+    "kind": "hub",
+    "file": "laws_commercial_code_part_2_main_body.json"
+   },
+   "summary": "بدنه اصلی قانون تجارت مصوب ۱۳۱۱؛ تاجر و معاملات تجارتی، دفاتر تجارتی، حق‌العمل‌کاری، دلالی، حمل و نقل، قائم‌مقامی و اسناد تجارتی. (مواد مربوط به شرکت‌های تجارتی به لایحه اصلاحی ۱۳۴۷ منتقل شده است.)",
+   "keywords": [
+    "تجارت",
+    "تاجر",
+    "دلالی",
+    "اسناد تجارتی",
+    "برات",
+    "سفته",
+    "چک",
+    "قائم‌مقامی"
+   ],
+   "checklist": [
+    "commercial-code"
+   ],
+   "gapPolicy": {
+    "movedTo": {
+     "commercial-amendment-1347": [
+      [
+       21,
+       93
+      ]
+     ]
+    },
+    "note": "مواد ۲۱ تا ۹۳ قانون تجارت به شرکت‌های تجارتی اختصاص داشت که با «لایحه اصلاحی قانون تجارت» مصوب ۱۳۴۷ جایگزین شده است؛ متن کامل لایحه در سند جداگانه «لایحه اصلاحی قانون تجارت (شرکت‌های تجارتی)» در همین برنامه آمده است."
+   }
+  },
+  {
+   "id": "commercial-amendment-1347",
+   "title": "لایحه اصلاحی قانون تجارت (شرکت‌های تجارتی)",
+   "shortTitle": "لایحه اصلاحی تجارت",
+   "category": "tejarat",
+   "hierarchy": "statute",
+   "documentType": "لایحه قانونی",
+   "approvalDate": "۱۳۴۷/۰۳/۲۲",
+   "approvalSort": 13470322,
+   "source": {
+    "kind": "hub",
+    "file": "laws_commercial_code_part_1_joint_stock_companies.json"
+   },
+   "summary": "مقررات شرکت‌های تجارتی؛ شرکت سهامی عام و خاص، با مسئولیت محدود، تضامنی، نسبی و تعاونی — مجامع عمومی، هیأت مدیره، بازرسان، انحلال و تصفیه (۳۰۰ ماده).",
+   "keywords": [
+    "شرکت سهامی",
+    "با مسئولیت محدود",
+    "تضامنی",
+    "مجامع عمومی",
+    "هیأت مدیره",
+    "تصفیه"
+   ],
+   "checklist": [
+    "commercial-amendment"
+   ]
+  },
+  {
+   "id": "check-issuance-law",
+   "title": "قانون صدور چک",
+   "shortTitle": "صدور چک",
+   "category": "tejarat",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۵۵/۰۴/۱۶",
+   "approvalSort": 13550416,
+   "source": {
+    "kind": "corpus",
+    "file": "q14.txt"
+   },
+   "summary": "مقررات صدور چک، چک برگشتی، مسئولیت صادرکننده، اقدامات اجرایی و مجازات چک بلامحل با آخرین اصلاحات ۱۳۹۷ و ۱۴۰۰.",
+   "keywords": [
+    "چک",
+    "چک بلامحل",
+    "برگشت چک",
+    "سفته"
+   ],
+   "checklist": [
+    "check-law"
+   ]
+  },
+  {
+   "id": "insurance-law",
+   "title": "قانون بیمه",
+   "shortTitle": "قانون بیمه",
+   "category": "tejarat",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۱۶/۰۲/۰۷",
+   "approvalSort": 13160207,
+   "source": {
+    "kind": "hub",
+    "file": "laws_five_statutes_insurance_law.json"
+   },
+   "summary": "قواعد عمومی عقد بیمه؛ بیمه‌های عمر، آتش‌سوزی، حمل و نقل و مسئولیت، تعهدات بیمه‌گر و بیمه‌گذار (۳۶ ماده).",
+   "keywords": [
+    "بیمه",
+    "بیمه‌گر",
+    "بیمه‌گذار",
+    "قرارداد بیمه"
+   ],
+   "checklist": [
+    "insurance"
+   ]
+  },
+  {
+   "id": "third-party-insurance-law",
+   "title": "قانون بیمه اجباری خسارات واردشده به شخص ثالث در اثر حوادث ناشی از وسایل نقلیه",
+   "shortTitle": "بیمه اجباری شخص ثالث",
+   "category": "sayer",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۹۵/۰۲/۲۰",
+   "approvalSort": 13950220,
+   "source": {
+    "kind": "corpus",
+    "file": "q18.txt"
+   },
+   "summary": "بیمه اجباری مسئولیت دارندگان وسایل نقلیه؛ صندوق تأمین خسارت‌های بدنی، نحوه جبران خسارت و رسیدگی به دعاوی مربوط (۶۶ ماده).",
+   "keywords": [
+    "بیمه اجباری",
+    "شخص ثالث",
+    "صندوق تأمین خسارت",
+    "دیه"
+   ],
+   "checklist": [
+    "third-party-insurance"
+   ]
+  },
+  {
+   "id": "computer-crimes-law",
+   "title": "قانون جرایم رایانه‌ای",
+   "shortTitle": "جرایم رایانه‌ای",
+   "category": "keyfari",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۸۸/۰۳/۰۵",
+   "approvalSort": 13880305,
+   "source": {
+    "kind": "hub",
+    "file": "laws_computer_crimes_law_computer_crimes_law.json"
+   },
+   "summary": "جرایم علیه محرمانگی داده‌ها، صحت و تمامیت داده‌ها، سرقت و کلاهبرداری رایانه‌ای، جرایم علیه عفت و اخلاق عمومی و مقررات کیفری رایانه‌ای (۵۶ ماده).",
+   "keywords": [
+    "جرایم رایانه‌ای",
+    "دسترسی غیرمجاز",
+    "کلاهبرداری رایانه‌ای",
+    "هتک حرمت"
+   ],
+   "checklist": [
+    "computer-crimes"
+   ]
+  },
+  {
+   "id": "anti-narcotics-law",
+   "title": "قانون اصلاح قانون مبارزه با مواد مخدر و الحاق موادی به آن",
+   "shortTitle": "مواد مخدر",
+   "category": "keyfari",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۷۶/۰۸/۱۷",
+   "approvalSort": 13760817,
+   "source": {
+    "kind": "hub",
+    "file": "laws_batch2_anti_narcotics_law.json"
+   },
+   "summary": "جرایم مربوط به مواد مخدر و روان‌گردان؛ حمل، نگهداری، خرید و فروش، مجازات‌ها، مصادره اموال و مقررات درمان معتادان (۴۶ ماده).",
+   "keywords": [
+    "مواد مخدر",
+    "روان‌گردان",
+    "اعتیاد",
+    "قاچاق"
+   ],
+   "checklist": [
+    "narcotics"
+   ]
+  },
+  {
+   "id": "anti-money-laundering-law",
+   "title": "قانون مبارزه با پول‌شویی",
+   "shortTitle": "پول‌شویی",
+   "category": "keyfari",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۸۶/۱۱/۰۲",
+   "approvalSort": 13861102,
+   "source": {
+    "kind": "hub",
+    "file": "laws_batch2_anti_money_laundering_law.json"
+   },
+   "summary": "تعریف جرم پول‌شویی، تکالیف اشخاص مشمول، مرکز اطلاعات مالی و مجازات‌ها؛ با آخرین اصلاحات تا ۱۳۹۷ (۱۴ ماده).",
+   "keywords": [
+    "پول‌شویی",
+    "مرکز اطلاعات مالی",
+    "جرایم مالی"
+   ],
+   "checklist": [
+    "aml"
+   ]
+  },
+  {
+   "id": "traffic-violations-law",
+   "title": "قانون رسیدگی به تخلفات رانندگی",
+   "shortTitle": "تخلفات رانندگی",
+   "category": "keyfari",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۸۹/۱۲/۰۸",
+   "approvalSort": 13891208,
+   "source": {
+    "kind": "hub",
+    "file": "laws_batch2_traffic_violations_law.json"
+   },
+   "summary": "تخلفات رانندگی و جریمه‌ها، نمره منفی، توقیف گواهی‌نامه و وسیله نقلیه و رسیدگی به اعتراضات (۳۵ ماده).",
+   "keywords": [
+    "تخلفات رانندگی",
+    "جریمه",
+    "نمره منفی",
+    "پلاک"
+   ],
+   "checklist": [
+    "traffic"
+   ]
+  },
+  {
+   "id": "judges-conduct-law",
+   "title": "قانون نظارت بر رفتار قضات",
+   "shortTitle": "نظارت بر رفتار قضات",
+   "category": "edari",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۹۰/۰۷/۱۷",
+   "approvalSort": 13900717,
+   "source": {
+    "kind": "hub",
+    "file": "laws_batch3_judges_conduct_supervision_law.json"
+   },
+   "summary": "تخلفات انتظامی قضات، دادگاه‌های انتظامی، مجازات‌های انتظامی و آیین رسیدگی (۵۶ ماده).",
+   "keywords": [
+    "قضات",
+    "تخلف انتظامی",
+    "دادگاه انتظامی",
+    "نظارت"
+   ],
+   "checklist": [
+    "judges-conduct"
+   ]
+  },
+  {
+   "id": "bar-association-law",
+   "title": "لایحه قانونی استقلال کانون وکلای دادگستری",
+   "shortTitle": "استقلال کانون وکلا",
+   "category": "edari",
+   "hierarchy": "statute",
+   "documentType": "لایحه قانونی",
+   "approvalDate": "۱۳۳۳/۱۲/۰۵",
+   "approvalSort": 13331205,
+   "source": {
+    "kind": "hub",
+    "file": "laws_batch2_bar_association_independence_law.json"
+   },
+   "summary": "سازمان کانون وکلای دادگستری، شرایط پروانه وکالت، وظایف و اختیارات، هیأت مدیره و مجازات‌های انتظامی وکلا (۲۶ ماده).",
+   "keywords": [
+    "کانون وکلا",
+    "پروانه وکالت",
+    "وکیل",
+    "انتظامی"
+   ],
+   "checklist": [
+    "bar-association"
+   ]
+  },
+  {
+   "id": "family-protection-law",
+   "title": "قانون حمایت خانواده",
+   "shortTitle": "حمایت خانواده",
+   "category": "khanevade",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۹۱/۱۲/۰۱",
+   "approvalSort": 13911201,
+   "source": {
+    "kind": "corpus",
+    "file": "q8.txt"
+   },
+   "summary": "دادگاه خانواده، صلاحیت، مشاوره خانواده، ثبت نکاح و طلاق، مهریه، نفقه، حضانت، اموال خانوادگی و مجازات تخلفات (۵۸ ماده).",
+   "keywords": [
+    "خانواده",
+    "طلاق",
+    "مهریه",
+    "نفقه",
+    "حضانت",
+    "نکاح",
+    "مشاوره خانواده"
+   ],
+   "checklist": [
+    "family-protection-1391"
+   ]
+  },
+  {
+   "id": "family-youth-population-law",
+   "title": "قانون حمایت از خانواده و جوانی جمعیت",
+   "shortTitle": "جوانی جمعیت",
+   "category": "khanevade",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۴۰۰/۰۷/۲۴",
+   "approvalSort": 14000724,
+   "source": {
+    "kind": "hub",
+    "file": "laws_batch2_family_youth_population_law.json"
+   },
+   "summary": "تسهیلات ازدواج و فرزندآوری، مرخصی زایمان و شیردهی، حمایت از ناباروری، مسکن خانواده و تخلفات مربوط (۷۳ ماده).",
+   "keywords": [
+    "جوانی جمعیت",
+    "فرزندآوری",
+    "مرخصی زایمان",
+    "ناباروری",
+    "ازدواج"
+   ],
+   "checklist": [
+    "family-youth"
+   ]
+  },
+  {
+   "id": "labor-code",
+   "title": "قانون کار جمهوری اسلامی ایران",
+   "shortTitle": "قانون کار",
+   "category": "kar",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۶۹/۰۸/۲۹",
+   "approvalSort": 13690829,
+   "source": {
+    "kind": "corpus",
+    "file": "q16.txt"
+   },
+   "summary": "روابط کارگر و کارفرما؛ قرارداد کار، مزد و مزایا، ساعات کار و مرخصی، شرایط کار زنان و نوجوانان، ایمنی و بهداشت، مراجع حل اختلاف و تشکل‌های کارگری (۲۰۳ ماده).",
+   "keywords": [
+    "کار",
+    "کارگر",
+    "کارفرما",
+    "مزد",
+    "مرخصی",
+    "قرارداد کار",
+    "بیمه بیکاری",
+    "سنوات"
+   ],
+   "checklist": [
+    "labor-203"
+   ]
+  },
+  {
+   "id": "social-security-law",
+   "title": "قانون تأمین اجتماعی",
+   "shortTitle": "تأمین اجتماعی",
+   "category": "kar",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۵۴/۰۴/۰۳",
+   "approvalSort": 13540403,
+   "source": {
+    "kind": "hub",
+    "file": "laws_social_security_law_social_security_law.json"
+   },
+   "summary": "بیمه‌های اجباری و اختیاری، منابع و مصارف سازمان تأمین اجتماعی، بازنشستگی، ازکارافتادگی، فوت، بیکاری و غرامت دستمزد (۱۱۸ ماده).",
+   "keywords": [
+    "تأمین اجتماعی",
+    "بازنشستگی",
+    "ازکارافتادگی",
+    "بیمه بیکاری",
+    "غرامت"
+   ],
+   "checklist": [
+    "social-security"
+   ]
+  },
+  {
+   "id": "trade-unions-law",
+   "title": "قانون نظام صنفی کشور",
+   "shortTitle": "نظام صنفی",
+   "category": "kar",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۸۲/۱۲/۲۴",
+   "approvalSort": 13821224,
+   "source": {
+    "kind": "hub",
+    "file": "laws_five_statutes_trade_unions_law.json"
+   },
+   "summary": "اتاق‌های اصناف، اتحادیه‌ها، پروانه کسب، کمیسیون‌های نظارت و رسیدگی به تخلفات صنفی (۹۶ ماده).",
+   "keywords": [
+    "نظام صنفی",
+    "اتاق اصناف",
+    "اتحادیه",
+    "پروانه کسب",
+    "تخلف صنفی"
+   ],
+   "checklist": [
+    "trade-unions"
+   ]
+  },
+  {
+   "id": "consumer-rights-law",
+   "title": "قانون حمایت از حقوق مصرف‌کنندگان",
+   "shortTitle": "حقوق مصرف‌کننده",
+   "category": "tejarat",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۸۸/۰۷/۱۵",
+   "approvalSort": 13880715,
+   "source": {
+    "kind": "hub",
+    "file": "laws_five_statutes_consumer_rights_law.json"
+   },
+   "summary": "حقوق مصرف‌کنندگان، الزام به درج قیمت و مشخصات کالا، گران‌فروشی، تبلیغات خلاف واقع و نحوه رسیدگی به شکایات (۲۲ ماده).",
+   "keywords": [
+    "مصرف‌کننده",
+    "گران‌فروشی",
+    "تبلیغ خلاف واقع",
+    "تضمین کالا"
+   ],
+   "checklist": [
+    "consumer-rights"
+   ]
+  },
+  {
+   "id": "vat-law",
+   "title": "قانون مالیات بر ارزش افزوده",
+   "shortTitle": "ارزش افزوده",
+   "category": "mali",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۴۰۰/۰۳/۰۲",
+   "approvalSort": 14000302,
+   "source": {
+    "kind": "hub",
+    "file": "laws_five_statutes_vat_law.json"
+   },
+   "summary": "مالیات بر ارزش افزوده و مالیات بر کالاهای خاص؛ مؤدیان، معافیت‌ها، اظهارنامه، اعتبار مالیاتی و تخلفات (۵۷ ماده).",
+   "keywords": [
+    "ارزش افزوده",
+    "مالیات",
+    "مؤدی",
+    "اظهارنامه",
+    "معافیت"
+   ],
+   "checklist": [
+    "vat"
+   ]
+  },
+  {
+   "id": "direct-taxes-law",
+   "title": "قانون مالیات‌های مستقیم",
+   "shortTitle": "مالیات‌های مستقیم",
+   "category": "mali",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۶۶/۱۲/۰۳",
+   "approvalSort": 13661203,
+   "source": {
+    "kind": "corpus",
+    "file": "q10.txt"
+   },
+   "summary": "مالیات بر درآمد اشخاص حقیقی و حقوقی، املاک، حقوق، مشاغل، اشخاص حقوقی، مالیات‌های تکلیفی، معافیت‌ها، رسیدگی و حل اختلاف مالیاتی (۲۸۲ ماده با اصلاحات ۱۳۸۰، ۱۳۹۴ و بعدی).",
+   "keywords": [
+    "مالیات",
+    "مالیات بر درآمد",
+    "معافیت مالیاتی",
+    "اظهارنامه",
+    "هیأت حل اختلاف مالیاتی"
+   ],
+   "checklist": [
+    "direct-taxes"
+   ]
+  },
+  {
+   "id": "government-revenue-law",
+   "title": "قانون وصول برخی از درآمدهای دولت و مصرف آن در موارد معین",
+   "shortTitle": "درآمدهای دولت",
+   "category": "mali",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۷۳/۱۲/۲۸",
+   "approvalSort": 13731228,
+   "source": {
+    "kind": "hub",
+    "file": "laws_batch3_government_revenue_law.json"
+   },
+   "summary": "تعرفه‌ها و عوارض وصولی دولت در خدمات قضایی، ثبتی، پزشکی قانونی و سایر موارد و نحوه مصرف آن‌ها (۹۱ ماده؛ مواد ۵۳ و ۷۷ در منبع اولیه موجود نبود).",
+   "keywords": [
+    "درآمد دولت",
+    "عوارض",
+    "تعرفه",
+    "هزینه قضایی"
+   ],
+   "checklist": [
+    "government-revenue"
+   ]
+  },
+  {
+   "id": "administrative-justice-court-law",
+   "title": "قانون تشکیلات و آیین دادرسی دیوان عدالت اداری",
+   "shortTitle": "دیوان عدالت اداری",
+   "category": "edari",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۹۲/۰۳/۲۵",
+   "approvalSort": 13920325,
+   "source": {
+    "kind": "corpus",
+    "file": "q13.txt"
+   },
+   "summary": "سازمان و صلاحیت دیوان عدالت اداری، شکایت از تصمیمات و اقدامات واحدهای دولتی، ابطال مقررات خلاف قانون، آرای شعب و هیأت عمومی (۱۲۴ ماده با اصلاحات ۱۴۰۲).",
+   "keywords": [
+    "دیوان عدالت اداری",
+    "شکایت اداری",
+    "ابطال مقررات",
+    "هیأت عمومی",
+    "کارمند دولت"
+   ],
+   "checklist": [
+    "administrative-justice"
+   ]
+  },
+  {
+   "id": "administrative-violations-law",
+   "title": "قانون رسیدگی به تخلفات اداری",
+   "shortTitle": "تخلفات اداری",
+   "category": "edari",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۷۲/۰۹/۰۷",
+   "approvalSort": 13720907,
+   "source": {
+    "kind": "hub",
+    "file": "laws_five_statutes_administrative_violations_law.json"
+   },
+   "summary": "تخلفات اداری کارمندان، هیأت‌های رسیدگی، تنبیهات اداری و آیین رسیدگی (۲۷ ماده).",
+   "keywords": [
+    "تخلف اداری",
+    "کارمند",
+    "هیأت رسیدگی",
+    "تنبیه اداری"
+   ],
+   "checklist": [
+    "administrative-violations"
+   ]
+  },
+  {
+   "id": "general-courts-law",
+   "title": "قانون تشکیل دادگاه‌های عمومی و انقلاب",
+   "shortTitle": "دادگاه‌های عمومی و انقلاب",
+   "category": "aein",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۷۳/۰۴/۱۵",
+   "approvalSort": 13730415,
+   "source": {
+    "kind": "hub",
+    "file": "laws_general_courts_law_general_courts_law.json"
+   },
+   "summary": "تشکیلات دادگاه‌های عمومی و انقلاب و صلاحیت آن‌ها (۳۹ ماده) — بخشی از مواد مربوط به دادسرا و تجدیدنظر با تصویب قانون آیین دادرسی کیفری ۱۳۹۲ نسخ شده است.",
+   "keywords": [
+    "دادگاه عمومی",
+    "دادگاه انقلاب",
+    "صلاحیت",
+    "تشکیلات"
+   ],
+   "checklist": [
+    "general-courts"
+   ]
+  },
+  {
+   "id": "dispute-resolution-councils-law",
+   "title": "قانون شوراهای حل اختلاف",
+   "shortTitle": "شوراهای حل اختلاف",
+   "category": "aein",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۴۰۲/۰۶/۲۲",
+   "approvalSort": 14020622,
+   "source": {
+    "kind": "corpus",
+    "file": "q17.txt"
+   },
+   "summary": "تشکیلات، صلاحیت و آیین دادرسی شوراهای حل اختلاف، صلح و سازش، داوری و اجرای تصمیمات (۴۱ ماده — قانون جدید ۱۴۰۲).",
+   "keywords": [
+    "شورای حل اختلاف",
+    "صلح و سازش",
+    "داوری",
+    "قاضی صلح"
+   ],
+   "checklist": [
+    "dispute-councils"
+   ]
+  },
+  {
+   "id": "registration-law",
+   "title": "قانون ثبت اسناد و املاک",
+   "shortTitle": "ثبت اسناد و املاک",
+   "category": "madani",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۱۰/۱۲/۲۶",
+   "approvalSort": 13101226,
+   "source": {
+    "kind": "corpus",
+    "file": "q11.txt"
+   },
+   "summary": "ثبت املاک و اسناد مالکیت، دفاتر اسناد رسمی، سردفتران و دفتریاران، هیأت نظارت و شورای عالی ثبت و مجازات‌های ثبتی (۱۵۷ ماده).",
+   "keywords": [
+    "ثبت",
+    "سند رسمی",
+    "سردفتر",
+    "دفترخانه",
+    "هیأت نظارت",
+    "سند مالکیت"
+   ],
+   "checklist": [
+    "registration"
+   ]
+  },
+  {
+   "id": "landlord-tenant-law",
+   "title": "قانون روابط موجر و مستأجر",
+   "shortTitle": "موجر و مستأجر",
+   "category": "madani",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۷۶/۰۵/۲۶",
+   "approvalSort": 13760526,
+   "source": {
+    "kind": "hub",
+    "file": "laws_landlord_tenant_law_landlord_tenant_law.json"
+   },
+   "summary": "روابط موجر و مستأجر در اجاره‌های پس از ۱۳۷۶؛ تنظیم سند رسمی، تخلیه، سرقفلی و نحوه رسیدگی (۱۳ ماده).",
+   "keywords": [
+    "موجر",
+    "مستأجر",
+    "اجاره",
+    "تخلیه",
+    "سرقفلی",
+    "ودیعه"
+   ],
+   "checklist": [
+    "landlord-tenant"
+   ]
+  },
+  {
+   "id": "apartment-ownership-law",
+   "title": "قانون تملک آپارتمان‌ها",
+   "shortTitle": "تملک آپارتمان‌ها",
+   "category": "madani",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۴۳/۱۲/۱۶",
+   "approvalSort": 13431216,
+   "source": {
+    "kind": "hub",
+    "file": "laws_batch2_apartment_ownership_law.json"
+   },
+   "summary": "مالکیت مشاعات و قسمت‌های اختصاصی آپارتمان، هزینه‌های مشترک و نحوه مدیریت ساختمان (۱۵ ماده).",
+   "keywords": [
+    "آپارتمان",
+    "مشاعات",
+    "قسمت اختصاصی",
+    "هزینه مشترک"
+   ],
+   "checklist": [
+    "apartment"
+   ]
+  },
+  {
+   "id": "civil-liability-law",
+   "title": "قانون مسئولیت مدنی",
+   "shortTitle": "مسئولیت مدنی",
+   "category": "madani",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۳۹/۰۲/۰۷",
+   "approvalSort": 13390207,
+   "source": {
+    "kind": "corpus",
+    "file": "q4.txt"
+   },
+   "summary": "مسئولیت مدنی و الزام به جبران خسارت؛ اتلاف، تسبیب، مباشرت، مسئولیت کارفرما و کارمند و خسارات معنوی (۱۶ ماده).",
+   "keywords": [
+    "مسئولیت مدنی",
+    "خسارت",
+    "اتلاف",
+    "تسبیب",
+    "ضرر و زیان"
+   ],
+   "checklist": [
+    "civil-liability"
+   ]
+  },
+  {
+   "id": "municipality-law",
+   "title": "قانون شهرداری",
+   "shortTitle": "شهرداری",
+   "category": "sayer",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۳۴/۰۴/۱۱",
+   "approvalSort": 13340411,
+   "source": {
+    "kind": "corpus",
+    "file": "q9.txt"
+   },
+   "summary": "تشکیلات شهرداری، وظایف انجمن شهر و شهردار، عوارض و درآمدها، پروانه ساختمان و تخلفات ساختمانی (۱۱۶ ماده).",
+   "keywords": [
+    "شهرداری",
+    "عوارض",
+    "پروانه ساختمان",
+    "تخلف ساختمانی",
+    "انجمن شهر"
+   ],
+   "checklist": [
+    "municipality"
+   ]
+  },
+  {
+   "id": "authors-rights-law",
+   "title": "قانون حمایت از حقوق مؤلفان، مصنفان و هنرمندان",
+   "shortTitle": "حقوق مؤلفان",
+   "category": "sayer",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۴۸/۱۰/۱۱",
+   "approvalSort": 13481011,
+   "source": {
+    "kind": "hub",
+    "file": "laws_batch3_authors_rights_law.json"
+   },
+   "summary": "حمایت از حقوق مادی و معنوی پدیدآورندگان آثار ادبی، علمی و هنری، مدت حمایت، استثناها و مجازات‌ها (۳۲ ماده؛ ماده ۱۲ در منبع اولیه نبود).",
+   "keywords": [
+    "حق مؤلف",
+    "مالکیت فکری",
+    "اثر ادبی",
+    "هنرمند",
+    "کپی‌رایت"
+   ],
+   "checklist": [
+    "authors-rights"
+   ]
+  },
+  {
+   "id": "software-rights-law",
+   "title": "قانون حمایت از حقوق پدیدآورندگان نرم‌افزارهای رایانه‌ای",
+   "shortTitle": "حقوق نرم‌افزار",
+   "category": "sayer",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۷۹/۱۰/۰۴",
+   "approvalSort": 13791004,
+   "source": {
+    "kind": "hub",
+    "file": "laws_batch3_software_rights_law.json"
+   },
+   "summary": "حمایت از حقوق مادی و معنوی پدیدآورندگان نرم‌افزار، ثبت نرم‌افزار، مجازات تکثیر غیرمجاز و تخلفات (۱۷ ماده).",
+   "keywords": [
+    "نرم‌افزار",
+    "حقوق پدیدآورنده",
+    "تکثیر غیرمجاز",
+    "مالکیت فکری"
+   ],
+   "checklist": [
+    "software-rights"
+   ]
+  },
+  {
+   "id": "customs-affairs-law",
+   "title": "قانون امور گمرکی",
+   "shortTitle": "امور گمرکی",
+   "category": "tejarat",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۹۰/۰۸/۲۲",
+   "approvalSort": 13900822,
+   "source": {
+    "kind": "hub",
+    "file": "laws_batch3_customs_law.json"
+   },
+   "summary": "تعاریف، سازمان و وظایف گمرک؛ ارزش‌گذاری کالا و قواعد مبدأ؛ تشریفات پیش از اظهار، نگهداری کالا، اظهار و ترخیص؛ رویه‌های گمرکی (ورود قطعی و موقت، صدور، عبور خارجی و داخلی، کابوتاژ)؛ تخلفات و قاچاق؛ معافیت‌ها و ممنوعیت‌ها؛ کارگزاری گمرکی؛ بازبینی پس از ترخیص و مراجع رسیدگی به اختلافات گمرکی (۱۶۵ ماده — اصلاحات تا ۱۳۹۳).",
+   "keywords": [
+    "گمرک",
+    "حقوق ورودی",
+    "ارزش گمرکی",
+    "ترخیص",
+    "قاچاق",
+    "رویه گمرکی",
+    "معافیت گمرکی",
+    "کارگزار گمرکی"
+   ]
+  },
+  {
+   "id": "hosbi-affairs-law",
+   "title": "قانون امور حسبی",
+   "shortTitle": "امور حسبی",
+   "category": "madani",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۱۹/۰۴/۰۲",
+   "approvalSort": 13190402,
+   "source": {
+    "kind": "hub",
+    "file": "laws_batch3_hosbi_law.json"
+   },
+   "summary": "رسیدگی به امور غیرترافعی: قیمومت (صلاحیت دادگاه، تعیین، اختیارات و عزل قیم)، امین، غایب مفقودالاثر و حکم موت فرضی، امور ترکه (مهر و موم، تحریر ترکه، دیون، وصیت، تقسیم، ترکهٔ بلاوارث، تصدیق انحصار وراثت) و هزینه‌ها (۳۷۸ ماده).",
+   "keywords": [
+    "امور حسبی",
+    "قیمومت",
+    "قیم",
+    "غایب مفقودالاثر",
+    "ترکه",
+    "وصیت",
+    "انحصار وراثت",
+    "موت فرضی"
+   ]
+  },
+  {
+   "id": "military-service-law",
+   "title": "قانون خدمت وظیفه عمومی",
+   "shortTitle": "خدمت وظیفه عمومی",
+   "category": "edari",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۶۳/۰۷/۲۹",
+   "approvalSort": 13630729,
+   "source": {
+    "kind": "hub",
+    "file": "laws_batch3_military_service_law.json"
+   },
+   "summary": "مقررات خدمت وظیفهٔ عمومی: کلیات، احضار و اعزام، خدمت در نیروهای مسلح، معافیت‌ها (پزشکی، کفالت، ایثارگری و …)، معافیت تحصیلی، خدمت در خارج از کشور و ضمانت اجرای تخلفات (۸۸ ماده — اصلاحات تا ۱۳۹۶).",
+   "keywords": [
+    "خدمت وظیفه عمومی",
+    "سربازی",
+    "معافیت",
+    "کفالت",
+    "احضار",
+    "اعزام",
+    "غیبت"
+   ]
+  },
+  {
+   "id": "military-service-addendum-law",
+   "title": "قانون الحاق موادی به قانون خدمت وظیفه عمومی",
+   "shortTitle": "الحاق موادی به خدمت وظیفه عمومی",
+   "category": "edari",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۶۵/۰۱/۲۶",
+   "approvalSort": 13650126,
+   "source": {
+    "kind": "hub",
+    "file": "laws_batch3_military_service_addendum_law.json"
+   },
+   "summary": "مواد الحاقی به قانون خدمت وظیفهٔ عمومی مصوب ۱۳۶۳ (۶ ماده).",
+   "keywords": [
+    "خدمت وظیفه عمومی",
+    "الحاق",
+    "سربازی"
+   ]
+  },
+  {
+   "id": "prison-sentence-reduction-law",
+   "title": "قانون کاهش مجازات حبس تعزیری",
+   "shortTitle": "کاهش مجازات حبس تعزیری",
+   "category": "keyfari",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۹۹/۰۲/۲۳",
+   "approvalSort": 13990223,
+   "source": {
+    "kind": "hub",
+    "file": "laws_batch3_prison_reduction_law.json"
+   },
+   "summary": "کاهش یا تبدیل مجازات‌های مقرر در کتاب پنجم قانون مجازات اسلامی (تعزیرات) و الحاق و اصلاح موادی از قانون مجازات اسلامی مصوب ۱۳۹۲ (۱۵ ماده).",
+   "keywords": [
+    "حبس تعزیری",
+    "کاهش مجازات",
+    "تعزیرات",
+    "مجازات جایگزین",
+    "قانون مجازات اسلامی"
+   ]
+  },
+  {
+   "id": "aggravated-punishment-bribery-embezzlement-fraud-law",
+   "title": "قانون تشدید مجازات مرتکبین ارتشاء، اختلاس و کلاهبرداری",
+   "shortTitle": "ارتشاء، اختلاس و کلاهبرداری",
+   "category": "keyfari",
+   "hierarchy": "statute",
+   "documentType": "قانون",
+   "approvalDate": "۱۳۶۷/۰۹/۱۵",
+   "approvalSort": 13670915,
+   "summary": "تشدید مجازات جرایم ارتشاء، اختلاس و کلاهبرداری، تعیین مصادیق، مجازات‌های تبعی، رد مال و جزای نقدی و مقررات مربوط به رسیدگی به جرایم مالی کارکنان دولت.",
+   "keywords": [
+    "ارتشاء",
+    "اختلاس",
+    "کلاهبرداری",
+    "رشوه",
+    "تشدید مجازات",
+    "جرایم مالی",
+    "رد مال"
+   ],
+   "checklist": [
+    "ref-criminal"
+   ],
+   "source": {
+    "kind": "hub",
+    "file": "laws_batch3_bribery_embezzlement_law.json"
+   }
+  }
+ ],
+ "checklist": [
+  {
+   "id": "fiqh",
+   "label": "موازین شرع (قواعد فقهی بنیادین)",
+   "status": "included",
+   "laws": [
+    "fiqh-rules"
+   ]
+  },
+  {
+   "id": "constitution-177",
+   "label": "قانون اساسی (۱۷۷ اصل کامل)",
+   "status": "included",
+   "laws": [
+    "constitution"
+   ]
+  },
+  {
+   "id": "civil-code-books-1-10",
+   "label": "قانون مدنی (جلدهای ۱ تا ۱۰)",
+   "status": "included",
+   "laws": [
+    "civil-code"
+   ]
+  },
+  {
+   "id": "penal-code-1392",
+   "label": "قانون مجازات اسلامی ۱۳۹۲ (حدود، قصاص، دیات، تعزیرات)",
+   "status": "included",
+   "laws": [
+    "islamic-penal-code"
+   ]
+  },
+  {
+   "id": "criminal-procedure",
+   "label": "قانون آیین دادرسی کیفری",
+   "status": "included",
+   "laws": [
+    "criminal-procedure-code"
+   ]
+  },
+  {
+   "id": "civil-procedure",
+   "label": "قانون آیین دادرسی مدنی (۵۲۹ ماده)",
+   "status": "included",
+   "laws": [
+    "civil-procedure-code"
+   ]
+  },
+  {
+   "id": "commercial-code",
+   "label": "قانون تجارت + لایحه اصلاحی",
+   "status": "included",
+   "laws": [
+    "commercial-code",
+    "commercial-amendment-1347",
+    "check-issuance-law"
+   ]
+  },
+  {
+   "id": "e-commerce-81",
+   "label": "قانون تجارت الکترونیکی (۸۱ ماده)",
+   "status": "included",
+   "laws": [
+    "electronic-commerce-law"
+   ]
+  },
+  {
+   "id": "family-protection-1391",
+   "label": "قانون حمایت خانواده ۱۳۹۱",
+   "status": "included",
+   "laws": [
+    "family-protection-law",
+    "family-youth-population-law"
+   ]
+  },
+  {
+   "id": "family-regulation",
+   "label": "آیین‌نامه اجرایی قانون حمایت خانواده (۶۹ ماده)",
+   "status": "pending",
+   "laws": [],
+   "note": "متن آیین‌نامه در منابع آزاد موجود نبود؛ از طریق اسکریپت استخراج یا ورود دستی قابل افزودن است."
+  },
+  {
+   "id": "labor-203",
+   "label": "قانون کار ۱۳۶۹ (۲۰۳ ماده)",
+   "status": "included",
+   "laws": [
+    "labor-code"
+   ]
+  },
+  {
+   "id": "social-security",
+   "label": "قانون تأمین اجتماعی",
+   "status": "included",
+   "laws": [
+    "social-security-law"
+   ]
+  },
+  {
+   "id": "administrative-justice",
+   "label": "قانون تشکیلات و آیین دادرسی دیوان عدالت اداری ۱۳۹۲",
+   "status": "included",
+   "laws": [
+    "administrative-justice-court-law"
+   ]
+  },
+  {
+   "id": "direct-taxes",
+   "label": "قانون مالیات‌های مستقیم",
+   "status": "included",
+   "laws": [
+    "direct-taxes-law"
+   ]
+  },
+  {
+   "id": "vat",
+   "label": "قانون مالیات بر ارزش افزوده",
+   "status": "included",
+   "laws": [
+    "vat-law"
+   ]
+  },
+  {
+   "id": "development-plans",
+   "label": "قوانین برنامه‌های توسعه (اول تا هفتم)",
+   "status": "pending",
+   "laws": [],
+   "note": "متن کامل برنامه‌های توسعه در منابع آزاد در دسترس نبود."
+  },
+  {
+   "id": "municipality",
+   "label": "قانون شهرداری",
+   "status": "included",
+   "laws": [
+    "municipality-law"
+   ]
+  },
+  {
+   "id": "environment",
+   "label": "قوانین محیط زیست (حفاظت و بهسازی، هوای پاک، پسماندها، شکار و صید، حفاظت از خاک، ایمنی زیستی)",
+   "status": "pending",
+   "laws": [],
+   "note": "متن ماده‌به‌ماده این قوانین باید از سامانه ملی قوانین (qavanin.ir) دریافت شود."
+  },
+  {
+   "id": "authors-rights",
+   "label": "مالکیت فکری (حقوق مؤلفان و نرم‌افزار)",
+   "status": "included",
+   "laws": [
+    "authors-rights-law",
+    "software-rights-law"
+   ]
+  },
+  {
+   "id": "mining",
+   "label": "قانون معادن",
+   "status": "pending",
+   "laws": [],
+   "note": "نیازمند ورود متن از سامانه ملی قوانین."
+  },
+  {
+   "id": "endowment",
+   "label": "قانون اوقاف و سازمان حج و اوقاف",
+   "status": "pending",
+   "laws": [],
+   "note": "نیازمند ورود متن از سامانه ملی قوانین."
+  },
+  {
+   "id": "civil-service",
+   "label": "قانون مدیریت خدمات کشوری و استخدام کشوری",
+   "status": "pending",
+   "laws": [],
+   "note": "متن ماده‌به‌ماده نیازمند ورود از سامانه ملی قوانین است."
+  },
+  {
+   "id": "usury-free-banking",
+   "label": "قانون عملیات بانکی بدون ربا",
+   "status": "pending",
+   "laws": [],
+   "note": "نیازمند ورود متن از سامانه ملی قوانین."
+  },
+  {
+   "id": "precedents",
+   "label": "آرای وحدت رویه دیوان عالی کشور و دیوان عدالت اداری",
+   "status": "pending",
+   "laws": [],
+   "note": "ساختار نمایش و فیلتر آن در برنامه پیش‌بینی شده است؛ متن آرا باید از منابع رسمی (دیوان عالی کشور) وارد شود."
+  },
+  {
+   "id": "advisory-opinions",
+   "label": "نظریات مشورتی اداره کل حقوقی قوه قضائیه",
+   "status": "pending",
+   "laws": [],
+   "note": "ساختار نمایش پیش‌بینی شده است؛ متن نظریات باید از منابع رسمی وارد شود."
+  },
+  {
+   "id": "criminal-procedure-supplementary",
+   "label": "قوانین مرتبط کیفری (جرایم رایانه‌ای، مواد مخدر، پول‌شویی، تخلفات رانندگی)",
+   "status": "included",
+   "laws": [
+    "computer-crimes-law",
+    "anti-narcotics-law",
+    "anti-money-laundering-law",
+    "traffic-violations-law"
+   ]
+  },
+  {
+   "id": "civil-related",
+   "label": "قوانین مرتبط مدنی (ثبت، موجر و مستأجر، آپارتمان، مسئولیت مدنی)",
+   "status": "included",
+   "laws": [
+    "registration-law",
+    "landlord-tenant-law",
+    "apartment-ownership-law",
+    "civil-liability-law"
+   ]
+  },
+  {
+   "id": "insurance",
+   "label": "بیمه و بیمه اجباری شخص ثالث",
+   "status": "included",
+   "laws": [
+    "insurance-law",
+    "third-party-insurance-law"
+   ]
+  },
+  {
+   "id": "administrative-related",
+   "label": "تخلفات اداری، نظارت بر رفتار قضات، کانون وکلا، نظام صنفی",
+   "status": "included",
+   "laws": [
+    "administrative-violations-law",
+    "judges-conduct-law",
+    "bar-association-law",
+    "trade-unions-law"
+   ]
+  },
+  {
+   "id": "procedural-related",
+   "label": "اجرای احکام، محکومیت‌های مالی، شوراهای حل اختلاف، دادگاه‌های عمومی",
+   "status": "included",
+   "laws": [
+    "civil-judgment-enforcement-law",
+    "financial-judgment-enforcement-law",
+    "dispute-resolution-councils-law",
+    "general-courts-law"
+   ]
+  }
+ ]
+}

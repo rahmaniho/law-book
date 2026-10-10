@@ -1,0 +1,27 @@
+{
+  "name": "law-book",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "apps/api"
+  ],
+  "engines": {
+    "node": ">=22.17"
+  },
+  "scripts": {
+    "dev": "npm run dev --workspace=@law-book/web -- --hostname 0.0.0.0",
+    "dev:api": "npm run dev --workspace=@law-book/api",
+    "build": "npm run build --workspaces --if-present",
+    "build:web": "npm run build --workspace=@law-book/web",
+    "test": "npm test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspace=@law-book/web",
+    "data:build": "npm run data:build --workspace=@law-book/web",
+    "test:offline": "node tools/test-offline.mjs",
+    "preview": "node tools/serve-web.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@sparticuz/chromium": "^153.0.0"
+  }
+}

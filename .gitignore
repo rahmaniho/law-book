@@ -1,0 +1,59 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# next.js
+/.next/
+/out/
+next-env.d.ts
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+Thumbs.db
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files
+.env
+.env*.local
+
+# vercel / netlify
+.vercel
+.netlify
+
+# typescript
+*.tsbuildinfo
+
+# python (scraper)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+scripts/scrape/out/
+scripts/scrape/.cache/
+
+# os / editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# فایل خامِ حجیم مجموعهٔ آراء قضایی (در مخزن نگه‌داری نمی‌شود؛ دادهٔ ساخته‌شده در public/data می‌ماند)
+data/sources/cases/case.csv
+
+# monorepo outputs / secrets
+node_modules/
+dist/
+.env.*
+!.env.example
+playwright-report/
+test-results/

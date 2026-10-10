@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 33% 97%;
+    --foreground: 220 21% 14%;
+    --card: 40 33% 99%;
+    --card-foreground: 220 21% 14%;
+    --popover: 40 33% 99%;
+    --popover-foreground: 220 21% 14%;
+    --primary: 173 68% 27%;
+    --primary-foreground: 40 33% 99%;
+    --secondary: 35 24% 92%;
+    --secondary-foreground: 220 21% 18%;
+    --muted: 35 22% 93%;
+    --muted-foreground: 220 10% 42%;
+    --accent: 172 25% 90%;
+    --accent-foreground: 173 68% 22%;
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 35 17% 86%;
+    --input: 35 17% 86%;
+    --ring: 173 68% 27%;
+    --radius: 1rem;
+    --font-serif-fa: Vazirmatn, system-ui, serif;
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+    --safe-top: env(safe-area-inset-top, 0px);
+    --nav-height: 60px;
+    /* ارتفاع واقعی نوار بالا؛ در زمان اجرا توسط AppShell اندازه‌گیری و بازنویسی
+       می‌شود. همهٔ نوارهای چسبنده از همین متغیر استفاده می‌کنند. */
+    --topbar-h: 56px;
+  }
+
+  .dark {
+    --background: 200 30% 6%;
+    --foreground: 180 12% 92%;
+    --card: 200 25% 9%;
+    --card-foreground: 180 12% 92%;
+    --popover: 200 25% 9%;
+    --popover-foreground: 180 12% 92%;
+    --primary: 172 66% 46%;
+    --primary-foreground: 200 40% 6%;
+    --secondary: 200 20% 15%;
+    --secondary-foreground: 175 30% 88%;
+    --muted: 200 20% 14%;
+    --muted-foreground: 195 12% 65%;
+    --accent: 200 25% 17%;
+    --accent-foreground: 172 60% 80%;
+    --destructive: 0 62% 48%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 200 18% 19%;
+    --input: 200 18% 19%;
+    --ring: 172 66% 46%;
+  }
+
+  * {
+    @apply border-border;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    /* جلوگیری از اسکرول افقی روی موبایل.
+       نکته: این قاعده از ریشه به viewport منتقل می‌شود و خودِ html مقدار
+       `visible` می‌گیرد، پس `position: sticky` فرزندان سالم می‌ماند. */
+    overflow-x: hidden;
+    /* پرشِ محتوای زیر نوار چسبنده هنگام پرش به لنگر/هش */
+    scroll-padding-top: calc(var(--topbar-h) + 0.75rem);
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: 'ss01';
+    padding-bottom: calc(var(--nav-height) + var(--safe-bottom));
+  }
+
+  /* جلوگیری از اسکرول افقی روی موبایل، بدون شکستن `position: sticky`.
+     برخلاف `overflow-x: hidden` روی body، مقدار `clip` «scroll container»
+     نمی‌سازد؛ با `hidden` مقدار `overflow-y` به `auto` تبدیل می‌شد و body به
+     کانتینر اسکرولِ بی‌اثر تبدیل می‌شد — در نتیجه نوار بالا و نوارهای
+     فیلتر هرگز نمی‌چسبیدند و با صفحه جابه‌جا می‌شدند. */
+  body {
+    overflow-x: clip;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.22);
+  }
+
+  input,
+  textarea,
+  button {
+    font: inherit;
+  }
+}
+
+@layer components {
+  .app-container {
+    @apply mx-auto w-full max-w-2xl px-4;
+  }
+
+  .eyebrow {
+    @apply text-[10px] font-semibold uppercase tracking-[0.18em] text-primary;
+  }
+
+  .editorial-hero {
+    background: radial-gradient(circle at 12% 15%, hsl(var(--primary) / 0.12), transparent 34%), linear-gradient(135deg, hsl(var(--card)), hsl(var(--muted) / 0.58));
+  }
+
+  .glass {
+    background: color-mix(in srgb, hsl(var(--background)) 82%, transparent);
+    backdrop-filter: saturate(180%) blur(14px);
+  }
+
+  .article-text {
+    text-wrap: pretty;
+    word-break: break-word;
+    text-align: justify;
+  }
+
+  .article-text p {
+    @apply mb-3;
+  }
+
+  .article-text .tabsoore {
+    @apply mt-2 block rounded-lg bg-muted/60 px-3 py-2 text-[0.95em] text-muted-foreground;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .safe-top {
+    padding-top: calc(var(--safe-top) + 0.5rem);
+  }
+
+  /* ارتفاع قابل‌اتکا در موبایل: 100vh با احتساب نوار آدرس مرورگر از پنجرهٔ
+     واقعی بزرگ‌تر است و انتهای صفحه زیر نوار ناوبری می‌رفت. */
+  .min-h-app {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  /* پنل شناور (Bottom Sheet): اسکرول داخلی بدون بیرون‌زدن از پنجره */
+  .panel-scroll {
+    max-height: 88vh;
+    max-height: 88dvh;
+  }
+
+  /* رندر تدریجی ماده‌ها بدون ساختن کانتینر اسکرول تودرتو:
+     مرورگر محتوای بیرونِ دید را رندر نمی‌کند، ولی ارتفاعش را نگه می‌دارد
+     و به‌محض نزدیک‌شدن، اندازهٔ واقعی را جایگزین می‌کند. */
+  .article-chunk {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 220px;
+  }
+
+  .safe-bottom {
+    padding-bottom: var(--safe-bottom);
+  }
+
+  .press {
+    @apply transition-transform duration-150 active:scale-[0.97];
+    transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
+  }
+
+  .skeleton {
+    @apply relative overflow-hidden rounded-xl bg-muted;
+  }
+  .skeleton::after {
+    content: '';
+    @apply absolute inset-0;
+    background: linear-gradient(90deg, transparent, hsl(var(--background) / 0.6), transparent);
+    animation: shimmer 1.6s infinite;
+  }
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes splash-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(0.98);
+  }
+}
+
+.splash-logo {
+  animation: splash-pulse 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* حالت چاپ: متن ماده تمیز چاپ شود */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    padding: 0;
+  }
+}

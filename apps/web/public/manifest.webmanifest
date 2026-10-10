@@ -1,0 +1,80 @@
+{
+  "name": "کتابچه قانون ایران",
+  "short_name": "کتابچه قانون",
+  "description": "قوانین و مقررات جمهوری اسلامی ایران؛ مرور و جست‌وجوی سریع و آفلاین در مواد قانونی. جمع‌آوری و تدوین: وکیل پایه یک دادگستری لیلا آبکه — توسعه: کارن سافت.",
+  "start_url": "/law-book/",
+  "scope": "/law-book/",
+  "id": "/law-book/",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#0f766e",
+  "lang": "fa",
+  "dir": "rtl",
+  "categories": [
+    "books",
+    "education",
+    "reference",
+    "government"
+  ],
+  "icons": [
+    {
+      "src": "/law-book/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/law-book/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/law-book/icons/maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/law-book/icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/law-book/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "جست‌وجو در قوانین",
+      "short_name": "جست‌وجو",
+      "url": "/law-book/search/",
+      "icons": [
+        {
+          "src": "/law-book/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "قانون مدنی",
+      "short_name": "قانون مدنی",
+      "url": "/law-book/read/?law=civil-code"
+    },
+    {
+      "name": "نشان‌شده‌ها",
+      "short_name": "نشان‌ها",
+      "url": "/law-book/bookmarks/"
+    }
+  ],
+  "prefer_related_applications": false
+}
